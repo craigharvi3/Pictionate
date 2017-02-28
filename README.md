@@ -16,4 +16,4 @@ brew install yarn
 yarn install
 npm start
 ```
-Then visit http://localhost:8080/ (woohoo!)
+Then visit [http://localhost:8080](http://localhost:8080) (woohoo!)
