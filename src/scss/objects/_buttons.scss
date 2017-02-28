@@ -1,0 +1,70 @@
+.btn {
+	background: #5BC0EB;
+	outline: none;
+	border: none;
+	display: inline-block;
+	padding: 0.8em;
+	/*@include rounded(3px);*/
+	color: #fff;
+	cursor: pointer;
+	transition: background-color ease 300ms;
+	transition: color none;
+
+	&.record {
+		background-color: #ff3819;
+	}
+
+	&:hover {
+		background-color: lighten( $base-dark-blue, 10% );
+		color: #fff;
+	}
+
+	&.full {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.btn.green {
+	background: #4EA24E;
+}
+
+.btn.facebook {
+	background: #3B5998;
+	color: #fff;
+	font-size: 0.9em;
+
+	&:hover {
+		background-color: lighten( #3B5998, 10% );
+	}
+}
+
+.btn.twitter {
+	background: #4099FF;
+	color: #fff;
+	font-size: 0.9em;
+
+	&:hover {
+		background-color: lighten( #4099FF, 10% );
+	}
+}
+
+.btn.set {
+	width: 100%;
+	text-align: center;
+}
+
+.btn[disabled] {
+	background: #999;
+	cursor: not-allowed;
+}
+
+
+.btn-link {
+	line-height: 44px;
+	margin-right: 0.5em;
+}
+
+
+

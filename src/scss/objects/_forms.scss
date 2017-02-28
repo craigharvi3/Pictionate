@@ -1,0 +1,126 @@
+textarea,
+select,
+input[type=email],
+input[type=text],
+input[type=password],
+input[type=range] {
+	color: #333;
+	background: #fff;
+	padding: 0.8em;
+	font-size: 1em;
+	outline: none;
+	border: none;
+	@include rounded(3px);
+	width: 100%;
+	font-family: 'PT Sans', sans-serif;
+	border: 1px solid #eee;
+}
+
+form {
+
+	font-family: 'PT Sans', sans-serif;
+
+	&.set {
+		max-width: 350px;
+		margin: 0 auto;
+
+		.btn {
+			text-align: center;
+		}
+	}
+
+	.slat-control {
+		padding-left: 40px;
+		position: relative;
+		margin-bottom: 0.5em;
+
+		span {
+			width: 40px;
+			height: 40px;
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			text-align: center;
+			line-height: 40px;
+			background: #c4c4c4;
+			color: #fff;
+		}
+
+		input[type=text] {
+			line-height: 40px;
+			height: 40px;
+			padding: 0 0.5em;
+			@include rounded(0);
+			border-color: #e4e4e4;
+			border-left: 0;
+			font-size: 0.9em;
+		}
+	}
+
+	fieldset {
+
+		&.double {
+
+			.control {
+				width: 50%;
+				display: inline-block;
+			}
+		}
+	}
+
+	&.slat-form {
+
+    padding-right: 120px;
+    position: relative;
+
+    input {
+    	border-top-right-radius: 0;
+   		border-bottom-right-radius: 0;
+    }
+
+		select {
+			position: absolute;
+		  right: 0;
+		  width: 120px;
+		  height: 100%;
+		  -webkit-appearance: none;
+		  border-top-left-radius: 0;
+		  border-bottom-left-radius: 0;
+		  border-left: 0;
+		  color: #999;
+
+		  &:focus {
+				border: 1px solid #eee;
+				border-left: 0;
+			}
+		}
+	}
+
+	.control {
+		padding: 0.25em;
+	}
+
+	label {
+		color: #333;
+		margin-bottom: 0.5em;
+		display: block;
+	}
+
+	&.labels-left {
+
+		.control {
+			padding-left: 100px;
+		}
+
+		label {
+			float: left;
+			line-height: 40px;
+			text-align: right;
+			width: 180px;
+			margin: 0 0 0 -200px;
+			font-size: 14px;
+		}
+	}
+
+}
+

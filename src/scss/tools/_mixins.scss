@@ -1,0 +1,80 @@
+//
+// Mixins:
+//
+
+
+
+// or you can use the micro clearfix mixin :=)
+@mixin group() {
+	& {
+			*zoom: 1;
+	}
+	&:before,
+	&:after {
+			content: "";
+			display: table;
+	}
+	&:after {
+			clear: both;
+	}
+}
+
+
+// Font size
+@mixin fontSize( $size:$base-fontsize ) {
+	font-size: ($size * 10 ) + px;
+	font-size: $size + rem;
+}
+
+
+// Transitions
+$bouncy-t-time: 0.2s;
+$bouncy-t-bezier: ease-out;
+
+@mixin transition( $transition-property, $transition-time:$bouncy-t-time, $method:$bouncy-t-bezier) {
+	transition: $transition-property $transition-time $method;
+}
+
+
+// Min-width media query
+@mixin mediaMin( $device-width ) {
+	@media screen and ( min-width: $device-width ) {
+		@content;
+	}
+}
+
+
+// Max-width media query
+@mixin mediaMax( $device-width ) {
+	@media screen and ( max-width: $device-width - 0.01 ) {
+		@content;
+	}
+}
+
+
+// Min Max-width media query
+@mixin mediaMinMax( $min-device-width, $max-device-width ) {
+	@media screen and ( min-width: $min-device-width ) and ( max-width: $max-device-width - 0.01 ) {
+		@content;
+	}
+}
+
+
+
+// Background picture
+@mixin bg-img( $url, $width:50%, $minheight:900px ) {
+	background: url( $url ) no-repeat center center;
+	background-size: cover;
+	min-height: $minheight;
+	width: $width;
+}
+
+@mixin dropshadow( $_h:0, $_v:5px, $_blur:5px, $_color:rgba( 0,0,0,0.2 ) ) {
+	// nice to have this in a mixin so we could swap it out for box shadow
+	filter: drop-shadow( $_h $_v $_blur $_color );
+}
+
+@mixin rounded ($radius: 5px) {
+	background-clip: padding-box;
+	border-radius: $radius;
+}

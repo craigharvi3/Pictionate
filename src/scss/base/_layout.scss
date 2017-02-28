@@ -1,0 +1,143 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+	background: #fff;
+	color: #444;
+	background-image: url(../img/photography.png);
+	background-repeat: repeat;
+	padding-top: 50px;
+
+	&.noscroll {
+		overflow: hidden;
+	}
+}
+
+.hide {
+	display: none !important;
+}
+
+.right {
+	float: right;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.left {
+	float: left;
+}
+
+.centertext {
+	text-align: center;
+}
+
+.group {
+	@include group();
+}
+
+a {
+	color: #5bc0eb;
+	cursor: pointer;
+	transition: color ease 300ms;
+
+	&:hover {
+		color: lighten(#5bc0eb, 5%);
+	}
+
+	&.instagram-link {
+		color: $instagram-blue;
+
+		&:hover {
+			color: lighten($instagram-blue, 5%);
+		}
+	}
+
+	&.twitter-link {
+		color: $twitter-blue;
+
+		&:hover {
+			color: lighten($twitter-blue, 5%);
+		}
+	}
+
+	&.facebook-link {
+		color: $facebook-blue;
+
+		&:hover {
+			color: lighten($facebook-blue, 5%);
+		}
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	line-height: 1.4;
+	margin-bottom: 0.5em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	position: relative;
+
+	@media(min-width: 670px) {
+		padding-left: 300px;
+	}
+
+	&.nopad {
+		padding-left: 0;
+	}
+}
+
+
+.wrap {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+section {
+
+	&.nopad {
+		padding: 0;
+	}
+
+	&.dark {
+		background: #4C5454;
+	}
+
+	&.padbottom {
+		padding-bottom: 3.5em;
+	}
+}
+
+hr {
+	margin: 1.5em 0;
+	border: none;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.margin-bottom {
+	margin-bottom: 1em;
+}
+
+.main {
+	padding: 1em 1em 1em 276px;
+}
+
+.content {
+	margin-left: 1em;
+	/*padding: 1em;*/
+	background: #fff;
+	@include rounded(2px);
+}
+
+

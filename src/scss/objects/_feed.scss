@@ -1,0 +1,260 @@
+.feed {
+	padding: 1em 0.5em 0.5em 0.5em;
+
+	@media(min-width: 670px) {
+		padding: 2em 1em 1em 1em;
+	}
+
+	.noresults {
+		padding: 1em;
+		background: #fff;
+		border-bottom: solid 2px #f2f2f2;
+	}
+
+	.feed-item {
+		position: relative;
+		background: #fff;
+		padding: 0;
+		margin-bottom: 1em;
+		border-bottom: solid 2px #f2f2f2;
+
+		@media(min-width: 670px) {
+			padding: 1em;
+			margin-bottom: 2em;
+		}
+
+		strong {
+			margin-right: 0.5em;
+		}
+
+		.feed-time {
+			padding: 0 1em;
+			height: 50px;
+			background: #999;
+			color: #fff;
+			text-align: center;
+			display: block;
+			line-height: 50px;
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			.feed-bg {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 5px;
+				transition: all ease-in-out 300ms;
+
+				&.hover {
+					height: 100%;
+				}
+			}
+
+			&.feed-time-1 {
+				.feed-bg:nth-child(1) {
+					width: 100%;
+					bottom: auto;
+					top: 0;
+					height: 100%;
+					left: 0;
+				}
+			}
+
+			&.feed-time-2 {
+				.feed-bg {
+					width: 50%;
+				}
+				.feed-bg:nth-child(1) {
+					left: 0;
+				}
+				.feed-bg:nth-child(2) {
+					left: 50%;
+				}
+			}
+
+			&.feed-time-3 {
+				.feed-bg {
+					width: 33.33%;
+				}
+				.feed-bg:nth-child(1) {
+					left: 0;
+				}
+				.feed-bg:nth-child(2) {
+					left: 33.33%;
+				}
+				.feed-bg:nth-child(3) {
+					left: 66.66%;
+				}
+			}
+
+			&.feed-time-4 {
+				.feed-bg {
+					width: 25%;
+				}
+				.feed-bg:nth-child(1) {
+					left: 0;
+				}
+				.feed-bg:nth-child(2) {
+					left: 25%;
+				}
+				.feed-bg:nth-child(3) {
+					left: 50%;
+				}
+				.feed-bg:nth-child(4) {
+					left: 75%;
+				}
+			}
+
+			&.feed-time-5 {
+				.feed-bg {
+					width: 20%;
+				}
+				.feed-bg:nth-child(1) {
+					left: 0;
+				}
+				.feed-bg:nth-child(2) {
+					left: 20%;
+				}
+				.feed-bg:nth-child(3) {
+					left: 40%;
+				}
+				.feed-bg:nth-child(4) {
+					left: 60%;
+				}
+				.feed-bg:nth-child(5) {
+					left: 80%;
+				}
+			}
+
+			.feed-time-text {
+				position: relative;
+				z-index: 19;
+			}
+
+			.Food {
+				background: #666;
+				color: #fff;
+			}
+
+			.City {
+				background: $base-green;
+				color: #fff;
+			}
+
+			.Games {
+				background: darkred;
+				color: #fff;
+			}
+
+			.Occasions {
+				background: lightblue;
+				color: #fff;
+			}
+
+			.People {
+				background: orange;
+				color: #fff;
+			}
+
+			.Technology {
+				background: $base-blue;
+				color: #fff;
+			}
+
+			.Travel {
+				background: $base-yellow;
+				color: #fff;
+			}
+
+			.Landscape {
+				background: #9260b8;
+				color: #fff;
+			}
+
+			.Love {
+				background: $base-red;
+				color: #fff;
+			}
+
+			.Vintage {
+				background: #e599e5;
+				color: #fff;
+			}
+
+			.Art {
+				background: #cf5fcf;
+				color: #fff;
+			}
+
+			.Music {
+				background: #5050bc;
+				color: #fff;
+			}
+
+			.Sport {
+				background: #ff9faf;
+				color: #fff;
+			}
+
+			.Photography {
+				background: #368d36;
+				color: #fff;
+			}
+		}
+
+		img {
+			max-width: 100%;
+			max-height: 100%;
+			margin-bottom: 0.5em;
+		}
+
+		.feed-desc {
+			padding: 0 1em;
+
+			pre {
+				margin-bottom: 0.5em;
+				padding-bottom: 0.2em;
+			}
+
+			@media(min-width: 670px) {
+				padding: 0;
+			}
+		}
+
+		.feed-actions {
+			list-style-type: none;
+			padding: 0 0.7em 1em 0.7em;
+
+			@media(min-width: 670px) {
+				padding: 0;
+			}
+
+			li {
+				display: inline-block;
+				margin-right: 0.5em;
+
+				a {
+					
+					.typcn {
+						font-size: 1.4em;
+
+						@media(min-width: 670px) {
+							font-size: 1.8em;
+						}
+					}
+
+					.share-title {
+						position: relative;
+						bottom: 3px;
+						margin-left: 0.2em;
+						font-size: 0.9em;
+					}
+
+					display: block;
+					padding: 0.2em;
+				}
+			}
+		}
+	}
+}

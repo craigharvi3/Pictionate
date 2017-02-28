@@ -1,0 +1,136 @@
+//
+// Settings
+//
+
+@import 'https://fonts.googleapis.com/css?family=PT+Sans';
+
+// Base Variables
+$base-fontsize: 1.5 !default;
+$base-lineheight: 1.5 !default;
+$base-fontfamily: 'Fira Sans', sans-serif;
+
+// body / base font
+$font-base: $base-fontfamily;
+
+// Headings
+$font-heading: $base-fontfamily;
+
+// Code
+$font-code: Menlo, Consolas, "DejaVu Sans Mono", Monaco, monospace;
+
+
+// Sizes for layout and media queries etc
+$xxxxs: 20em; // 320px;
+$xxxs: 25em; // 400px;
+$xxs: 30em; // 480px;
+$xs: 40em; // 640px;
+$s: 48em; // 768px;
+$m: 54em; // 864px
+$l: 62em; // 992px;
+$xl: 73em; // 1168px;
+$xxl: 84em; // 1344px;
+$xxxl: 100em; // 1600px;
+$xxxxl: 116em; // 1856px;
+
+// max width for container/wrapper elements
+$max-width: $xxl;
+
+
+//
+// Spinners
+//
+$spinner-img: url( '/a/svg/loading-spokes.svg' );
+$spinner-img-black: url( '/a/svg/loading-spokes-black.svg' );
+$spinner-sml: 16px 16px;
+$spinner-med: 32px 32px;
+$spinner-lg: 64px 64px;
+
+
+//
+// Colors
+//
+
+// standard colours
+$black: rgb( 0, 0, 0 ) !default;
+$white: rgb( 255, 255, 255 ) !default;
+$offwhite: rgb(  252, 253, 255 ) !default;
+$dark-grey: rgb( 110, 110, 110 ) !default;
+$grey: rgb( 187, 187, 187 ) !default;
+$grey--light: rgb( 242, 241, 244 ) !default;
+$grey--light-alt: #D4D4D5 !default;
+
+$blue: rgb( 0, 87, 184 );
+$blue-dark: rgb( 0, 40, 85 );
+
+$red: rgb( 255, 0, 0 );
+
+
+// Notification Messages
+$warning: rgb(255, 0, 0) !default;
+
+
+// System Colors
+$build-green: rgb( 217, 234, 211 ) !default;
+$green: rgb( 56, 118, 29 ) !default;
+
+
+// State Colors for Build Statues
+$states: (
+  1: $black, //
+  2: $green, // Complete
+  3: $red, // Failed
+  4: $blue, //
+  5: $grey // Queued
+);
+
+
+// Text Colors
+$text-body: $dark-grey;
+$text-link: $green;
+$text-link-hover: $blue-dark;
+$text-link-active: $blue-dark;
+$text-link-focus: $blue-dark;
+$text-link-visited: $blue-dark;
+$text-link-border: $blue-dark;
+$text-link-border-active: $green;
+
+
+$base-dark-grey: #595959;
+$base-light-grey: #c6c6c6;
+$base-dark-blue: #4f5d73;
+
+$base-blue: #5bc0eb;
+$base-green: #9bc53d;
+$base-yellow: #fde74c;
+$base-red: #e55934;
+
+$twitter-blue: #4099FF;
+$facebook-blue: #3B5998;
+$instagram-blue: #125688;
+
+// Forms
+$form-label: $text-body;
+$form-pre-text-color: rgb( 98, 98, 98 );
+$fieldset-border: rgb( 235, 235, 235 );
+$input-bg-color: rgb( 245, 245, 245 );
+$input-border-color: rgb( 212, 212, 212 );
+$input-focus-bg-color: rgb( 255, 255, 255 );
+$input-focus-border-color: rgb( 180, 180, 180 );
+$input-disabled-color: rgb( 98, 98, 98 );
+
+
+// Buttons
+$button: $build-green;
+$button--hover: $green;
+
+$button-grey: darken( $grey--light, 8% );
+$button-grey--hover: $grey--light;
+
+$button-text: $text-body;
+$button-text--hover: $white;
+
+$button-reset-text: darken( $grey, 8% );
+$button-reset-text--hover: $grey;
+
+$button-disabled-bg: rgb( 198, 198, 198 );
+$button-disabled-font-color: rgb( 108, 108, 108 );

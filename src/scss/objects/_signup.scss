@@ -1,0 +1,36 @@
+.signup {
+
+	width: 100%;
+	height: 100%;
+
+	.note {
+		color: #8b8b8b;
+		margin-bottom: 1em;
+	}
+
+	.signup--inner {
+
+		width: 500px;
+		margin: 0 auto;
+		@include rounded(3px);
+		background: rgba(255,255,255,0.8);
+		padding: 1em;
+
+		&.large {
+			width: 800px;
+		}
+
+		img {
+			width: 50px;
+			display: block;
+			margin: 0 auto 0.5em auto;
+		}
+
+		h2 {
+			color: $base-green;
+			margin-bottom: 1em;
+			text-align: center;
+		}
+
+	}
+}

@@ -1,0 +1,93 @@
+.sidebar {
+	width: 284px;
+	background: #fff;
+	padding: 1em;
+	border-bottom: 2px solid #f2f2f2;
+	z-index: 19;
+	top: 50px;
+	bottom: 0;
+	border-right: 1px solid #f2f2f2;
+
+	@media(min-width: 670px) {
+		position: absolute;
+		top: 2em;
+		bottom: auto;
+		left: 1em;
+	}
+
+	.space-title {
+
+		h2 {
+			margin: 0 0 0.2em 0;
+			font-size: 1.4em;
+		}
+	}
+
+	&.fixed {
+		position: fixed;
+		margin-left: -300px;
+		top: 50px;
+		left: auto;
+
+		&.in {
+			margin-left: 0;
+		}
+
+		@media(min-width: 670px) {
+			margin-left: -300px;
+			top: 82px;
+
+			&.in {
+				margin-left: -300px;
+			}
+		}
+	}
+
+	p {
+		margin: 0;
+		color: #999;
+	}
+
+	h3 {
+		color: darkgrey;
+		margin-bottom: 1em;
+		text-transform: uppercase;
+		font-size: 0.8em;
+	}
+
+	button {
+		width: 100%;
+		height: 40px;
+	}
+
+	.logo {
+
+		display: inline-block;
+		transition: all 300ms ease-in-out;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		img {
+			width: 100px;
+		}
+
+	}
+
+	.upload-imij {
+		position: absolute;
+		width: 284px;
+		left: 1em;
+		bottom: 1em;
+		display: block;
+		text-align: center;
+		background: #444;
+		padding: 0.5em 0;
+		@include rounded(3px);
+
+		img {
+			width: 150px;
+		}
+	}
+}

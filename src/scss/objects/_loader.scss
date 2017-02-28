@@ -1,0 +1,36 @@
+// Loader
+
+.loader {
+
+	svg {
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -75px;
+		margin-top: -75px;
+	}
+}
+
+$len: 242.776657104492px;
+$time: 1.6s;
+#outline {
+	stroke-dasharray: $len*0.01, $len;
+	stroke-dashoffset: 0;
+	animation: anim $time linear infinite;
+}
+@keyframes anim {
+	12.5% {
+		stroke-dasharray: $len*0.14, $len;
+		stroke-dashoffset: -$len*0.11;
+	}
+	43.75% {
+		stroke-dasharray: $len*0.35, $len;
+		stroke-dashoffset: -$len*0.35;
+	}
+	100% {
+		stroke-dasharray: $len*0.01, $len;
+		stroke-dashoffset: -$len*0.99;
+	}
+}

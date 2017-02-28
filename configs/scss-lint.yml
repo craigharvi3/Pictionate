@@ -1,0 +1,3 @@
+exclude:
+  - '../src/scss/tools/*.scss'
+  - '../src/scss/extlibs/*.scss'

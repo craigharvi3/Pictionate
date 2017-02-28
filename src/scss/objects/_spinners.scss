@@ -1,0 +1,65 @@
+/***
+ * Spinners:
+ */
+
+ /**
+ * Spinner:
+ *
+ *     @example
+ *     button.spinner-btn Standard button
+ */
+.spinner {
+	background: {
+		color: transparent;
+		image: $spinner-img-black;
+		position: center center;
+		repeat: no-repeat;
+	}
+	min-height: 100px;
+
+	* {
+		display: none;
+	}
+
+	&-input {
+		background: {
+			position: 99% 24%;
+			size: 1.5em;
+		}
+		min-height: 0;
+
+		* {
+			display: block;
+		}
+	}
+
+	&.white {
+		background-image: $spinner-img;
+	}
+
+	&.custom {
+		background-image: none;
+	}
+
+	&-btn {
+		background: {
+			image: $spinner-img;
+			position: 0.4em center;
+			repeat: no-repeat;
+			size: $spinner-sml;
+		}
+		padding-left: 2em;
+	}
+
+	&-small {
+		background-size: $spinner-sml;
+	}
+
+	&-medium {
+		background-size: $spinner-med;
+	}
+
+	&-large {
+		background-size: $spinner-lg;
+	}
+}

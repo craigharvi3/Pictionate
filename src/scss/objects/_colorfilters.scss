@@ -1,0 +1,217 @@
+.colour-filters {
+		list-style-type: none;
+
+		li {
+			width: 50%;
+			float: left;
+			margin-bottom: 0.25em;
+
+			&:nth-child(odd) {
+				padding-right: 0.125em;
+			}
+
+			&:nth-child(even) {
+				padding-left: 0.125em;
+			}
+
+			&:nth-child(13), &:nth-child(14) {
+				margin-bottom: 0;
+			}
+
+		}
+
+		a {
+			display: block;
+			padding: 0.6em 0.8em;
+			opacity: 0.4;
+			font-size: 0.85em;
+			transition: all ease-in-out 300ms;
+			background: $base-blue;
+			color: #fff;
+
+			&:hover, &.active {
+				opacity: 1;
+			}
+
+			span {
+				font-size: 1.2em;
+				margin-right: 0.25em;
+			}
+		}
+
+		.food {
+			background: #666;
+			color: #fff;
+			border-top: solid 5px #666;
+			border-bottom: 5px solid #666;
+
+			&.active {
+				border-bottom: 5px solid darken( #666, 10% );
+			}
+		}
+
+		.games {
+			background: darkred;
+			color: #fff;
+			border-top: solid 5px darkred;
+			border-bottom: 5px solid darkred;
+
+			&.active {
+				border-bottom: 5px solid darken( darkred, 10% );;
+			}
+		}
+
+		.occasions {
+			background: #6ea2b4;
+			color: #fff;
+			border-top: solid 5px #6ea2b4;
+			border-bottom: 5px solid #6ea2b4;
+
+			&.active {
+				border-bottom: 5px solid darken( #6ea2b4, 10% );;
+			}
+		}
+
+		.city {
+			background: $base-green;
+			color: #fff;
+			border-top: solid 5px $base-green;;
+			border-bottom: 5px solid $base-green;
+
+			&.active {
+				border-bottom: 5px solid darken( $base-green, 10% );
+			}
+		}
+
+		.people {
+			background: orange;
+			color: #fff;
+			border-top: solid 5px orange;
+			border-bottom: 5px solid orange;
+
+			&.active {
+				border-bottom: 5px solid darken( orange, 10% );
+			}
+		}
+
+		.technology {
+			background: $base-blue;
+			color: #fff;
+			border-top: solid 5px $base-blue;
+			border-bottom: 5px solid $base-blue;
+
+			&.active {
+				border-bottom: 5px solid darken( $base-blue, 10% );
+			}
+		}
+
+		.travel {
+			background: $base-yellow;
+			color: #fff;
+			border-top: solid 5px $base-yellow;
+			border-bottom: 5px solid $base-yellow;
+
+			&.active {
+				border-bottom: 5px solid darken( $base-yellow, 10% );
+			}
+		}
+
+		.landscape {
+			background: #9260b8;
+			color: #fff;
+			border-top: solid 5px #9260b8;
+			border-bottom: 5px solid #9260b8;
+
+			&.active {
+				border-bottom: 5px solid darken( #9260b8, 10% );
+			}
+		}
+
+		.love {
+			background: $base-red;
+			color: #fff;
+			border-top: solid 5px $base-red;
+			border-bottom: 5px solid $base-red;
+
+			&.active {
+				border-bottom: 5px solid darken( $base-red, 10% );
+			}
+		}
+
+		.vintage {
+			background: #e599e5;
+			color: #fff;
+			border-top: solid 5px #e599e5;
+			border-bottom: 5px solid #e599e5;
+
+			&.active {
+				border-bottom: 5px solid darken( #e599e5, 10% );
+			}
+		}
+
+		.art {
+			background: #cf5fcf;
+			color: #fff;
+			border-top: solid 5px #cf5fcf;
+			border-bottom: 5px solid #cf5fcf;
+
+			&.active {
+				border-bottom: 5px solid darken( #cf5fcf, 10% );
+			}
+		}
+
+		.music {
+			background: #5050bc;
+			color: #fff;
+			border-top: solid 5px #5050bc;
+			border-bottom: 5px solid #5050bc;
+
+			&.active {
+				border-bottom: 5px solid darken( #5050bc, 10% );
+			}
+		}
+
+		.sport {
+			background: #ff9faf;
+			color: #fff;
+			border-top: solid 5px #ff9faf;
+			border-bottom: 5px solid #ff9faf;
+
+			&.active {
+				border-bottom: 5px solid darken( #ff9faf, 10% );
+			}
+		}
+
+		.photography {
+			background: #368d36;
+			color: #fff;
+			border-top: solid 5px #368d36;
+			border-bottom: 5px solid #368d36;
+
+			&.active {
+				border-bottom: 5px solid darken( #368d36, 10% );
+			}
+		}
+
+
+		.blue {
+			background-color: $base-blue;
+			color: #fff;
+		}
+
+		.green {
+			background-color: $base-green;
+			color: #fff;
+		}
+
+		.yellow {
+			background-color: $base-yellow;
+			color: #fff;
+			/*color: #666;*/
+		}
+
+		.red {
+			background-color: $base-red;
+			color: #fff;
+		}
+	}
